@@ -1,0 +1,94 @@
+.gift-card {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #f6a6b8, #f3c3cd);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 150px;
+}
+
+/* Button */
+.btn1 {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    font-size: 13px;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Section */
+.gift-section {
+    max-width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Wrapper */
+.gift-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Card */
+.gift-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #f6a6b8, #f3c3cd);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 140px;
+}
+
+/* Image */
+.gift-img {
+    width: 40%;
+    height: 100%;
+}
+
+.gift-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text */
+.gift-text {
+    width: 60%;
+    padding: 20px;
+    color: white;
+}
+
+.gift-text h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.gift-text p {
+    font-size: 14px;
+}
+
+.btn1 {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.btn1:hover {
+    background: #e5b700;
+}

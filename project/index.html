@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Premium Luxury makeup products</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 40px;
+    padding-top: 110px; 
+    background: #f6f6f6;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-bottom: 20px;
+}
+.hero::-webkit-scrollbar {
+    display: none;
+}
+
+/* Banner Card */
+.banner {
+    min-width: 480px;     /* important */
+    height: 430px;
+    scroll-snap-align: start;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #0a1230, #0f2b60);
+    position: relative;
+    color: white;
+}
+
+/* Title */
+.banner h1 {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 24px;
+    font-family: Georgia, serif;
+}
+
+.banner h1 span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Product Image */
+.products {
+    position: absolute;
+    inset: 0;              /* top:0 right:0 bottom:0 left:0 */
+    z-index: 0;
+}
+.products img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: auto;
+}
+.products video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position: center;
+    position: absolute;
+    inset: 0;
+}
+
+/* Offer Text */
+.offer {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer small {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Button */
+.btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    color: #ff5a8a;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2b3a55;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 0px;     
+}
+#intro{
+    margin-top: 55px;  
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffdd57;
+}
+
+/* ================= MOBILE FIX START ================= */
+
+@media (max-width: 768px) {
+
+  body{
+    padding:15px !important;
+    padding-top:100px !important;
+  }
+
+  /* HERO SCROLL BANNERS */
+  .banner{
+    min-width:90vw !important;
+    height:300px !important;
+  }
+
+  .banner h1{
+    font-size:18px !important;
+  }
+
+  .offer{
+    font-size:14px !important;
+  }
+
+  .btn{
+    font-size:12px !important;
+    padding:8px 16px !important;
+  }
+
+  /* PRODUCT CARDS SCROLL */
+  .card{
+    min-width:220px !important;
+  }
+
+  .card-img{
+    height:200px !important;
+  }
+
+  /* VIDEO SECTION */
+  .content{
+    flex-direction:column !important;
+    padding:20px !important;
+  }
+
+  .video-box1{
+    width:100% !important;
+    height:250px !important;
+  }
+
+  .text-box1 h1{
+    font-size:24px !important;
+  }
+
+  /* BIG IMAGE SECTION */
+  .image{
+    width:100% !important;
+    height:auto !important;
+  }
+
+  .image img{
+    height:auto !important;
+  }
+
+  /* SALES BANNER */
+  .banner-text{
+    max-width:100% !important;
+  }
+
+  .products2{
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+  }
+
+  .products2 img{
+    width:120px !important;
+  }
+
+  .model img{
+    width:200px !important;
+    height:auto !important;
+  }
+
+  /* SLIDER */
+  .slider{
+    width:100% !important;
+    height:auto !important;
+  }
+
+  .slides{
+    width:100% !important;
+    animation:none !important;
+  }
+
+  .slides img{
+    width:100% !important;
+    height:auto !important;
+  }
+
+  /* REVIEW CARDS */
+  .review-card{
+    width:90% !important;
+  }
+
+  .review-card1{
+    width:95% !important;
+  }
+
+  /* CONTACT */
+  .contact-container{
+    flex-direction:column !important;
+    text-align:center !important;
+  }
+
+  .email-box input{
+    width:100% !important;
+  }
+
+  /* FEATURES */
+  .features-container{
+    flex-direction:column !important;
+    text-align:center !important;
+  }
+
+  #9 .banner{
+      flex-direction:column;
+      height:auto;
+      padding:20px;
+      text-align:center;
+  }
+
+  #9 .banner-text{
+      max-width:100%;
+  }
+
+  #9 .products2{
+      justify-content:center;
+      flex-wrap:wrap;
+  }
+
+  #9 .model img{
+      width:220px;
+      height:auto;
+      margin-top:20px;
+  }
+
+}
+
+/* ================= MOBILE FIX END ================= */
+
+</style>
+</head>
+<!--0-->
+
+<!-- NAVIGATION BAR -->
+<nav>
+    <a href="#intro">Discount</a>
+    <a href="#3">Product</a>
+    <a href="#8">Our top's</a>
+    <a href="#9">Sales</a>
+        <a href="#6">Gifts</a>
+    <a href="#12">Feedback</a>
+    <a href="#14">Contact</a>
+</nav>
+
+<body>
+    <!--1-->
+
+<section id="intro">
+<div class="hero">
+<div class="banner">
+    <h1>
+        <i>NYKAA</i>
+        <span>REDEFINING 2026</span>
+    </h1>
+
+    <div class="products">
+        <!-- Replace image with your perfume image -->
+         <video controls loop autoplay muted width="480px" height="430px"> <source src="video.mp4"></video>
+    </div>
+
+    <div class="offer">
+        Up To 50% Off
+        <small>& Exciting Gifts</small>
+    </div>
+
+    <a href="https://www.nykaa.com" class="btn">Shop Now →</a>
+</div>
+<div class="banner">
+    <h1>
+        Luxury Scents
+        <span>REDEFINING 2026</span>
+    </h1>
+
+    <div class="products">
+        <!-- Replace image with your perfume image -->
+        <img src="image3.jpeg" alt="Perfumes">
+    </div>
+
+    <div class="offer">
+        Up To 70% Off
+        <small>& Exciting Gifts</small>
+    </div>
+
+    <a href="https://www.kaybeauty.com" class="btn">Shop Now →</a>
+</div>
+<div class="banner">
+    <h1>
+        Luxury Scents
+        <span>REDEFINING 2026</span>
+    </h1>
+
+    <div class="products">
+        <!-- Replace image with your perfume image -->
+        <img src="image2.webp" alt="Perfumes">
+    </div>
+
+    <div class="offer">
+        Up To 75% Off
+        <small>& Exciting Gifts</small>
+    </div>
+
+    <a href="https://www.lakmeindia.com" class="btn">Shop Now →</a>
+</div>
+
+<div class="banner">
+    <h1>
+        Luxury Scents
+        <span>REDEFINING 2026</span>
+    </h1>
+
+    <div class="products">
+        <!-- Replace image with your perfume image -->
+        <img src="image4.jpg" alt="Perfumes">
+    </div>
+
+    <div class="offer">
+        Up To 50% Off
+        <small>& Exciting Gifts</small>
+    </div>
+
+    <a href="https://www.loreal.com" class="btn">Shop Now →</a>
+</div>
+
+<div class="banner">
+    <h1>
+        Luxury Scents
+        <span>REDEFINING 2026</span>
+    </h1>
+
+    <div class="products">
+        <!-- Replace image with your perfume image -->
+        <img src="image5.webp" alt="Perfumes">
+    </div>
+
+    <div class="offer">
+        Up To 60% Off
+        <small>& Exciting Gifts</small>
+    </div>
+
+    <a href="https://www.maybelline.com" class="btn">Shop Now →</a>
+</div>
+</div>
+</section>
+<!--2-->
+
+<section id="2">
+<div class="about">
+    <h1>Meet our top-tier products</h1>
+    <h3>Here your beauty's</h3>
+    
+</div>
+<style type="text/css">
+    .about{
+        background: url('image6.jpg');
+        height:150px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:3px;
+        border-radius: 16px;
+        text-align: center;
+    }
+</style>
+</section>
+
+<!--3-->
+
+<section id="3">
+<div class="section1">
+    <div class="products1">
+
+        <div class="card">
+            <div class="card-img">
+                <img src="image11.png">
+            </div>
+            <div class="card-title">HUG-PROOF RADIANCE</div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="image12.png">
+            </div>
+            <div class="card-title">CAMERA-READY GLOW</div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="image13.png">
+            </div>
+            <div class="card-title">MESMERISING EYES</div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="image14.png">
+            </div>
+            <div class="card-title">ICONIC PILLOW TALK LIPS</div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="image15.png">
+            </div>
+            <div class="card-title">FLAWLESS FINISH</div>
+        </div>
+
+    </div>
+</div>
+<style type="text/css">
+    body{
+    margin:0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background:#f3f3f3;
+}
+
+.section1{
+    padding:40px;
+}
+
+/* ROW */
+.products1{
+    display:flex;
+    gap:22px;
+    overflow-x:auto;
+}
+
+/* CARD */
+.card{
+    min-width:280px;
+    background:#fff;
+    border-radius:16px;
+    padding:14px;
+    text-align:center;
+}
+
+.card-img{
+    height:280px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: url('image9.webp');
+}
+
+/* PRODUCT IMAGE */
+.card-img img{
+    max-width:75%;
+    max-height:75%;
+    object-fit:contain;
+}
+
+/* TEXT */
+.card-title{
+    margin-top:14px;
+    font-size:14px;
+    letter-spacing:1.2px;
+    color:#222;
+}
+
+/* SCROLLBAR */
+.products1::-webkit-scrollbar{
+    height:6px;
+}
+.products1::-webkit-scrollbar-thumb{
+    background:#bbb;
+    border-radius:10px;
+}
+</style>
+</section>
+
+<!--4-->
+
+<section id="4">
+<div class="about1">
+    <h1>One look of our products</h1>
+    <h3>Here Glimpse of it</h3>
+    
+</div>
+</section>
+<style type="text/css">
+    .about1{
+        background: url('image7.jpeg');
+        height:150px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:3px;
+        border-radius: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+    }
+</style>
+
+<!--5-->
+
+<section id="5">
+<div class="video">
+
+<title>Blur Video Background</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Wrapper */
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+/* BLURRED BACKGROUND VIDEO */
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(30px);
+    transform: scale(1.2);
+}
+
+/* Blue overlay */
+.wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 60, 140, 0.35);
+    z-index: 1;
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    padding: 40px;
+}
+
+/* Left Text */
+.text-box1 {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(90px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.text-box1 h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text-box1 p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #e6f0ff;
+    margin-bottom: 30px;
+}
+
+/* Right Vertical Video */
+.video-box1 {
+    width:100%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.video-box1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-section {
+    margin-top: 40px;
+}
+</style>
+
+<div class="wrapper">
+
+    <!-- BACKGROUND VIDEO -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+
+        <!-- TEXT -->
+        <div class="text-box1">
+            <h1>Fair Glow Beauty</h1>
+            <p>
+                A little touch of our premium 
+                makeup products.
+            </p>
+        </div>
+
+        <!-- FOREGROUND VIDEO -->
+        <div class="video-box1">
+            <video autoplay muted loop playsinline>
+                <source src="video3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+</div>
+
+</div> 
+</div>
+</section>
+
+<!--6--> 
+
+<section id="6">
+<section class="gift-section">
+    <link rel="stylesheet" href="page1.css">
+
+    <h2 class="section-title">The Gifting Corner</h2>
+
+    <div class="gift-wrapper">
+
+        <!-- Gift Card -->
+        <div class="gift-card">
+            <div class="gift-img">
+                <img src="Gift-card.webp" alt="Gift Card">
+            </div>
+
+            <div class="gift-text">
+                <h3>GIFT CARDS</h3>
+                <p>Give them exactly what they need.</p>
+            </div>
+
+            <a href="https://www.woohoo.in/" class="btn1"><u>View Details</u></a>
+        </div>
+
+        <!-- Gift Store -->
+        <div class="gift-card">
+            <div class="gift-img">
+                <img src="gift-store.avif" alt="Gift Store">
+            </div>
+
+            <div class="gift-text">
+                <h3>THE GIFT STORE</h3>
+                <p>Find The Perfect Present For Every Occasion</p>
+            </div>
+
+            <a href="https://www.fnp.com" class="btn1"><u>View Details</u></a>
+        </div>
+
+    </div>
+
+</section>
+</div>
+</section> 
+
+<!--7-->
+
+<section id="7">
+<div class="image">
+    <img src="image52.jpg">
+</div>
+</section>
+
+<style>
+.image{
+    width:100%;
+    max-width:1200px;
+    height:auto;
+    margin:auto;
+    margin-top:30px;
+    border-radius:20px;
+    background:url('image53.jpg') center/cover no-repeat;
+}
+
+.image img{
+    width:100%;
+    height:auto;        
+    max-height:600px;
+    object-fit:contain;
+    display:block;
+}
+
+</style>
+
+<!--8-->
+
+<section id="8">
+<link rel="stylesheet" href="page2.css">
+
+<section class="brand-section">
+
+    <div class="brand-row">
+
+        <div class="brand-card">
+            <div class="brand-img">
+                <img src="whatimage3.jpeg" alt="Beauty of Joseon">
+            </div>
+            <p><b>Red</b></p>
+        </div>
+
+        <div class="brand-card">
+            <div class="brand-img">
+                <img src="whatimage4.jpeg" alt="Eucerin">
+            </div>
+            <p><b>Blue</b></p>
+        </div>
+
+        <div class="brand-card">
+            <div class="brand-img">
+                <img src="whatimage5.jpeg" alt="Minimalist">
+            </div>
+            <p><b>Orange</b></p>
+        </div>
+
+        <div class="brand-card">
+            <div class="brand-img">
+                <img src="whatimage6.jpeg" alt="Cetaphil">
+            </div>
+            <p><b>Green</b></p>
+        </div>
+
+        <div class="brand-card">
+            <div class="brand-img">
+                <img src="whatimage7.jpeg" alt="Dot & Key">
+            </div>
+            <p><b>Pink</b></p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--9-->
+
+<section id="9">
+<style>
+body{
+    margin:0;
+    padding:0;              
+    background:#f5f5f5;
+    overflow-x:hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner */
+.banner{
+    width:100%;              
+    height:350px;
+    margin:0;                 
+    background: linear-gradient(135deg,#cdefff,#9fd3f5,#7bbde8);
+    border-radius:0;          
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px 60px;
+    overflow:hidden;
+    position:relative;
+    border-radius:20px;
+}
+
+/* Left Section */
+.banner-text{
+    color:#235C63;
+    max-width:45%;
+}
+
+.banner-text h3{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.banner-text h1{
+    font-size:34px;
+    margin:10px 0;
+}
+
+.banner-text p{
+    font-size:16px;
+}
+
+/* Brands */
+.brands{
+    position:absolute;
+    top:20px;
+    left:20px;
+    display:flex;
+    gap:12px;
+}
+
+.brand-box{
+    background:#B6D4D9;
+    color:#333;
+    padding:6px 12px;
+    font-size:13px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* Center Products */
+.products2{
+    display:flex;
+    gap:15px;
+}
+
+.products2 img{
+    width:200px;
+    transition:transform 0.3s;
+}
+
+.products2 img:hover{
+    transform:scale(1.1);
+}
+
+/* Right Model */
+.model img{
+    width:420px;
+    border-radius:10px;
+}
+
+/* Button */
+button{
+    margin-top:15px;
+    padding:10px 22px;
+    border:none;
+    background:#0a6ed1;
+    color:#fff;
+    font-size:15px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084f9c;
+}
+</style>
+
+<div class="banner">
+
+    <!-- Brand Names -->
+    <div class="brands">
+        <div class="brand-box">WishCare</div>
+        <div class="brand-box">Kérastase</div>
+    </div>
+
+    <!-- Left Text -->
+    <div class="banner-text">
+        <h3>Up To 50% Off</h3>
+        <h1><b>Hair Growth Essentials</b></h1><br>
+        <p><i>Premium care for stronger, healthier hair..</i></p><br>
+        <button onclick="shopNow()">Shop Now</button>
+    </div>
+
+    <!-- Center Products -->
+    <div class="products2">
+        <img src="image20.png" alt="Product 2">
+        <img src="image21.png" alt="Product 3">
+        <img src="image22.png" alt="Product 4">
+    </div>
+
+    <!-- Right Model -->
+    <div class="model">
+        <img src="image23.png" alt="Model"  height="350px">
+    </div>
+
+</div>
+
+<script>
+function shopNow(){
+    alert("Redirecting to Hair Care Products 🛍️");
+}
+</script>
+</section>
+<!--10-->
+
+<section id="10">
+<div class="about2">
+    <h1>Meet our top-tier products</h1>
+    <h3>Here your beauty's</h3>
+    
+</div>
+</section>
+<style type="text/css">
+    .about2{
+        background: url('image8.webp');
+        height:150px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:3px;
+        border-radius: 16px;
+        text-align: center;
+        margin-top: 30px;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+</style>
+<!--11-->
+
+<section id="11">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.slider {
+  width: 1300px;
+  height: 350px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width: 600px;
+  height: 350px;
+}
+
+@keyframes slide {
+  0%   {margin-left: 0;}
+  33%  {margin-left: -600px;}
+  66%  {margin-left: -1600px;}
+  100% {margin-left: 0;}
+}
+</style>
+
+<div class="slider">
+  <div class="slides">
+    <img src="image31.jpg">
+    <img src="image32.jpg">
+    <img src="image33.webp">
+    <img src="image34.jpg">
+    <img src="image35.jpg">
+
+  </div>
+</div>
+</section>
+<!--12-->
+
+<section id="12">
+<title>Product Reviews</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#f2f2f2;
+}
+
+/* SECTION */
+.review-section{
+    max-width:1200px;
+    margin:30px auto 20px;
+    padding:10px;
+}
+
+.review-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+/* GRID */
+.review-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+    align-items:stretch;   
+}
+
+/* CARD */
+.review-card{
+    background:#ff8566;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.2s;
+    width:320px;
+    display:flex;
+    flex-direction:column;
+    height:240px;   
+}
+
+.review-card:hover{
+    transform:translateY(-26px);
+}
+
+/* USER */
+.user{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.user img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    margin-right:12px;
+}
+
+.user h4{
+    margin:0;
+    font-size:16px;
+    color:#222;
+}
+
+.user span{
+    font-size:13px;
+    color:#6b6b47;
+}
+
+/* STARS */
+.stars{
+    color:#ffcc00;
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+/* TEXT */
+.review-text{
+    margin-top:auto;
+    font-size:14px;
+    line-height:1.6;
+    color:#660033;
+}
+</style>
+
+<section class="review-section">
+    <h2><b>Customer Reviews</b></h2>
+
+    <div class="review-grid">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=32">
+                <div>
+                    <h4>Riya Sharma</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+            “I love how easy it is to find the right products on glamora. Reviews, shade guides, and tutorials make shopping stress-free.”
+            </p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=47">
+                <div>
+                    <h4>Aman Verma</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">
+                “Best beauty app ever! From skincare to makeup, everything is available at one place with trusted brands and great offers.”
+            </p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=12">
+                <div>
+                    <h4>Sneha Patel</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+                Glamora offers a smooth and well-organized platform with a wide range of authentic beauty, skincare, and wellness products. The user interface is clean, easy to navigate, and beginner-friendly.
+            </p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=25">
+                <div>
+                    <h4>Rahul Mehta</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">
+                “Excellent quality and service. Every order arrives on time and in great condition. glamora truly delivers premium beauty products.”
+            </p>
+        </div>
+        
+        <!-- Review 5 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=8">
+                <div>
+                    <h4>Pooja Nair</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+               Orders are delivered safely with proper packaging. Real-time order tracking and timely updates improve the overall shopping experience.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--13-->
+
+<section id="13">
+<title>Review Card</title>
+
+<style>
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.review-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+/* Card */
+.review-card1 {
+    width: 900px;
+    background: url('image41.jpg');
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    text-align: center;
+    color: #2d2a4a;
+}
+
+/* Title */
+.review-card1 h2 {
+    margin-bottom: 25px;
+    color: yellow;
+}
+
+/* Star Rating */
+.rating {
+    direction: rtl;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: gold;
+}
+
+/* Inputs */
+.review-form input,
+.review-form textarea {
+    width: 95%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.review-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* Button */
+.review-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<div class="review-wrapper">
+    <div class="review-card1">
+
+        <h2>Product Reviews</h2>
+
+        <!-- Star Rating -->
+        <div class="rating">
+            <input type="radio" name="star" id="star5">
+            <label for="star5">★</label>
+
+            <input type="radio" name="star" id="star4">
+            <label for="star4">★</label>
+
+            <input type="radio" name="star" id="star3">
+            <label for="star3">★</label>
+
+            <input type="radio" name="star" id="star2">
+            <label for="star2">★</label>
+
+            <input type="radio" name="star" id="star1">
+            <label for="star1">★</label>
+        </div>
+
+        <!-- Review Form -->
+        <div class="review-form">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Write your review..." required></textarea>
+            <form action="thank.html">
+    <input type="email" placeholder="Your Email" required>
+    <button type="submit">Submit Review</button>
+</form>
+
+        </div>
+    </div>
+</div>
+
+</section>
+<!--14-->
+
+<section id="14">
+<title>Contact Section</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    background:#2f3a3a;
+    color:#fff;
+    padding:40px 20px;
+}
+
+.contact-container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:30px;
+}
+
+/* BOX STYLE */
+.contact-box{
+    flex:1;
+    min-width:250px;
+}
+
+/* EMAIL BOX */
+.email-box p{
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.email-box input{
+    padding:10px;
+    width:65%;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+}
+
+.email-box button{
+    padding:10px 15px;
+    border:none;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+/* APP SECTION */
+.app-box p{
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.app-buttons img{
+    height:40px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+/* SUPPORT SECTION */
+.support-box p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+.support-box h3{
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+        text-align:center;
+    }
+    .email-box input{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
+</style>
+
+<section class="contact-section">
+     <div class="contact-container">
+
+        <!-- EMAIL SUBSCRIPTION -->
+        <div class="contact-box email-box">
+            <p>📧 Get special discount on your inbox</p>
+            <form action="thankyou.html">
+    <input type="email" placeholder="Your Email" required>
+    <button type="submit">SEND</button>
+</form>
+
+        </div>
+
+        <!-- APP DOWNLOAD -->
+        <div class="contact-box app-box">
+            <p>📱 EXPERIENCE THE MOBILE APP</p>
+            <div class="app-buttons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+            </div>
+        </div>
+
+        <!-- SUPPORT INFO -->
+        <div class="contact-box support-box">
+            <h3>📞 FOR ANY HELP, YOU MAY CALL US AT</h3>
+            <p>+9195-5660-4808</p>
+            <p>(All days, 8 AM to 10 PM)</p>
+        </div>
+    </div>
+</section>
+
+<!--15-->
+
+<section id="15">
+<title>Features Section</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f7f7f7;
+}
+
+/* FEATURES SECTION */
+.features-section{
+    background:#ff3399;
+    padding:30px 20px;
+    border-top:2px solid #eee;
+}
+
+.features-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+/* FEATURE ITEM */
+.feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    min-width:200px;
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    background:#ffffff;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+.feature-text h4{
+    margin:0;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.feature-text p{
+    margin:3px 0 0;
+    font-size:13px;
+    color:#555;
+}
+
+/* SOCIAL SECTION */
+.social{
+    text-align:center;
+}
+
+.social p{
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.social-icons span{
+    display:inline-block;
+    width:32px;
+    height:32px;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    line-height:32px;
+    margin:0 4px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .features-container{
+        justify-content:center;
+        text-align:center;
+    }
+    .feature{
+        justify-content:center;
+    }
+}
+</style>
+
+<section class="features-section">
+    <div class="features-container">
+
+        <div class="feature">
+            <div class="icon">🚚</div>
+            <div class="feature-text">
+                <h4>FREE SHIPPING</h4>
+                <p>On Orders Above ₹299</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">↩️</div>
+            <div class="feature-text">
+                <h4>EASY RETURNS</h4>
+                <p>15-Day Return Policy</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">✔️</div>
+            <div class="feature-text">
+                <h4>100% AUTHENTIC</h4>
+                <p>Products Sourced Directly</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🏷️</div>
+            <div class="feature-text">
+                <h4>1900+ BRANDS</h4>
+                <p>1.2 Lakh+ Products</p>
+            </div>
+        </div>
+
+        <div class="social">
+            <p>Show us some love ❤ on social media</p>
+            <div class="social-icons">
+                <span>📸</span>
+                <span>📘</span>
+                <span>▶️</span>
+                <span>🐦</span>
+                <span>📌</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

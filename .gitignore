@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (if you add Node.js later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+Thumbs.db
+.env.local
+.env
